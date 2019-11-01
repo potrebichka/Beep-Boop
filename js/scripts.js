@@ -5,8 +5,12 @@ $(document).ready(function() {
 
         const number = parseInt($("#numberInput").val());
         const userName = $("#nameInput").val();
+        const reverseFlag = $("#reverse")[0].checked;
 
         const results = BeepBoop(number, userName);
+        if (reverseFlag) {
+            results.reverse();
+        }
         const len = results.length;
         results.forEach((result) => {
             if (len % 3 === 0) {
