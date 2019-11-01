@@ -7,8 +7,15 @@ $(document).ready(function() {
         const userName = $("#nameInput").val();
 
         const results = BeepBoop(number, userName);
+        const len = results.length;
         results.forEach((result) => {
-            $("#result").append("<li>" + result + "</li>")
+            if (len % 3 === 0) {
+                $("#result").append("<li class='purpleClass'>" + result + "</li>")
+            } else if (len % 3 === 1) {
+                $("#result").append("<li class='redClass'>" + result + "</li>")
+            } else {
+                $("#result").append("<li class='blueClass'>" + result + "</li>")
+            }
         });
         $(".resultBox").slideDown();
     })

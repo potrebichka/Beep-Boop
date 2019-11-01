@@ -23,3 +23,44 @@ input#userInput {
     width: 30%;
     margin: 30px;
 }
+
+ul {
+    list-style: none;
+    text-align: left;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+li.purpleClass::before {
+    content: ' ';
+    background: #662974;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+li.redClass::before {
+    content: ' ';
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+li.blueClass::before {
+    content: ' ';
+    background: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 10px;
+}
