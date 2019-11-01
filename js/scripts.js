@@ -3,6 +3,14 @@ $(document).ready(function() {
         $(".resultBox").slideUp(1000);
     });
 
+    $("#nameInput").focus(function() {
+        $(".resultBox").slideUp(1000);
+    });
+
+    $("#reverse").focus(function() {
+        $(".resultBox").slideUp(1000);
+    });
+
     $("form#formInput").submit(function(event) {
         event.preventDefault();
         $("#result").empty();
