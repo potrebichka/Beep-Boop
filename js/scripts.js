@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $("#numberInput").focus(function() {
+        $(".resultBox").slideUp(1000);
+    });
+
     $("form#formInput").submit(function(event) {
         event.preventDefault();
         $("#result").empty();
@@ -21,7 +25,7 @@ $(document).ready(function() {
                 $("#result").append("<li class='blueClass'>" + result + "</li>")
             }
         });
-        $(".resultBox").slideDown();
+        $(".resultBox").slideDown(2000);
     })
 });
 
